@@ -18,6 +18,7 @@ const noteSchema = new mongoose.Schema({
     important: Boolean
 })
 
+
 noteSchema.set('toJSON', {
     transform: (document, returnedObject) => {
       returnedObject.id = returnedObject._id.toString()
